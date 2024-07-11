@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/antonelladomenez/my-portfolio/static/css/main.4123dd59.css",
+    "main.js": "/antonelladomenez/my-portfolio/static/js/main.353f4a9f.js",
+    "static/media/AntonellaPhoto.jpg": "/antonelladomenez/my-portfolio/static/media/AntonellaPhoto.f910054dfa2fb6550ce5.jpg",
+    "static/media/justDevineLogo.png": "/antonelladomenez/my-portfolio/static/media/justDevineLogo.0cf55b446d518e6a602b.png",
+    "static/media/fancyItLogo.png": "/antonelladomenez/my-portfolio/static/media/fancyItLogo.6610aa310e11640ce780.png",
+    "static/media/logo.png": "/antonelladomenez/my-portfolio/static/media/logo.364eefa37fab033128c4.png",
+    "static/media/fisioTeamLogo.png": "/antonelladomenez/my-portfolio/static/media/fisioTeamLogo.08ccfe470e4e9ede9753.png",
+    "index.html": "/antonelladomenez/my-portfolio/index.html",
+    "main.4123dd59.css.map": "/antonelladomenez/my-portfolio/static/css/main.4123dd59.css.map",
+    "main.353f4a9f.js.map": "/antonelladomenez/my-portfolio/static/js/main.353f4a9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4123dd59.css",
+    "static/js/main.353f4a9f.js"
+  ]
+}
