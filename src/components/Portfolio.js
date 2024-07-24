@@ -1,11 +1,40 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ScrollAnimation from "./ScrollAnimation";
-import fancyITLogo from "../images/fancyItLogo.png"; // Asegúrate de reemplazar con la ruta correcta a tu imagen
-import justDevineLogo from "../images/justDevineLogo.png"; // Asegúrate de reemplazar con la ruta correcta a tu imagen
-import fisioteamLogo from "../images/fisioTeamLogo.png"; // Asegúrate de reemplazar con la ruta correcta a tu imagen
+import ProjectCard from "./ProjectCard";
+import fancyITLogo from "../images/fancyItLogo.png";
+import justDevineLogo from "../images/justDevineLogo.png";
+import fisioteamLogo from "../images/fisioTeamLogo.png";
+import factoryNails from "../images/factoryNails.png";
 
 function Portfolio() {
+  const projects = [
+    {
+      title: "Fancy IT Solutions",
+      text: "Specialized in website creation, design, and branding.",
+      link: "https://www.fancyitsolutions.com",
+      image: fancyITLogo,
+    },
+    {
+      title: "Just Devine Gelato",
+      text: "A responsive website that showcases their history and delicious gelato flavors.",
+      link: "https://www.justdevinegelateria.com",
+      image: justDevineLogo,
+    },
+    {
+      title: "FisioTeam",
+      text: "A healthcare website with a connection to Square for bookings.",
+      link: "https://www.fisioteam.kesug.com/",
+      image: fisioteamLogo,
+    },
+    {
+      title: "Factory Nails",
+      text: "A professional website for a beauty salon offering nail design.",
+      link: "https://www.factorynails.wuaze.com/",
+      image: factoryNails,
+    },
+  ];
+
   return (
     <Container className="portfolio-section">
       <Row className="justify-content-center">
@@ -13,62 +42,15 @@ function Portfolio() {
           <ScrollAnimation>
             <h2>Portfolio</h2>
             <Row>
-              <Col md={6} className="mb-4">
-                <Card>
-                  <Card.Img variant="top" src={fancyITLogo} />
-                  <Card.Body>
-                    <Card.Title>Fancy IT Solutions</Card.Title>
-                    <Card.Text>
-                      Specialized in website creation, design, and branding.
-                    </Card.Text>
-                    <Card.Link
-                      href="https://www.fancyitsolutions.com"
-                      target="_blank"
-                      className="custom-link"
-                    >
-                      Visit Website
-                    </Card.Link>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={6} className="mb-4">
-                <Card>
-                  <Card.Img variant="top" src={justDevineLogo} />
-                  <Card.Body>
-                    <Card.Title>Just Devine Gelato</Card.Title>
-                    <Card.Text>
-                      A responsive website that showcases their history and
-                      delicious gelato flavors.
-                    </Card.Text>
-                    <Card.Link
-                      href="https://www.justdevinegelateria.com"
-                      target="_blank"
-                      className="custom-link"
-                    >
-                      Visit Website
-                    </Card.Link>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={6} className="mb-4">
-                <Card>
-                  <Card.Img variant="top" src={fisioteamLogo} />
-                  <Card.Body>
-                    <Card.Title>FisioTeam</Card.Title>
-                    <Card.Text>
-                      A healthcare website with a connection to Square for
-                      bookings.
-                    </Card.Text>
-                    <Card.Link
-                      href="https://www.fisioteam.kesug.com/"
-                      target="_blank"
-                      className="custom-link"
-                    >
-                      Visit Website
-                    </Card.Link>
-                  </Card.Body>
-                </Card>
-              </Col>
+              {projects.map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  title={project.title}
+                  text={project.text}
+                  link={project.link}
+                  image={project.image}
+                />
+              ))}
             </Row>
           </ScrollAnimation>
         </Col>

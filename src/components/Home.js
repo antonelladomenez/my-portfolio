@@ -13,7 +13,7 @@ function Home() {
           <h1 className="display-4">Antonella Domenez</h1>
           <h3>
             <Typewriter
-              words={['Web Developer', 'Web Designer']}
+              words={['Web Developer', 'Web Designer', 'Front-End Developer']}
               loop={true}
               cursor
               cursorStyle="_"
